@@ -21,15 +21,15 @@ class MainActivity : AppCompatActivity() {
 
 
     fun display() {
-        var salary = Wallet("", "20,000", "20982", "1-3-2003")
-        var rent = Wallet("", "80333", "93933", "3-4-2005")
-        var electricity = Wallet("", "74747", "20039", "29-3-2008")
-        var internet = Wallet("", "10,000", "40982", "1-3-2003")
-        var shopping = Wallet("", "3893", "93933", "4-4-2005")
-        var busfare = Wallet("", "4003", "20039", "9-3-2008")
-        var waterbill = Wallet("", "30,000", "20982", "1-3-2003")
+        val salary = Wallet("", "20,000", "20982", "1-3-2003")
+        val rent = Wallet("", "80333", "93933", "3-4-2005")
+        val electricity = Wallet("", "74747", "20039", "29-3-2008")
+        val internet = Wallet("", "10,000", "40982", "1-3-2003")
+        val shopping = Wallet("", "3893", "93933", "4-4-2005")
+        val busfare = Wallet("", "4003", "20039", "9-3-2008")
+        val waterbill = Wallet("", "30,000", "20982", "1-3-2003")
 
-        var wallet = listOf(salary,rent,electricity,internet,shopping,busfare,waterbill)
+        val wallet = listOf(salary,rent,electricity,internet,shopping,busfare,waterbill)
         val walletAdapter = WalletsAdapter(wallet)
         binding.rvWallet.adapter = walletAdapter
 

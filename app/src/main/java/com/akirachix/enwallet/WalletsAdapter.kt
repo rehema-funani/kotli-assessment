@@ -15,9 +15,12 @@ class WalletsAdapter(var list: List<Wallet>) : RecyclerView.Adapter<WalletViewHo
     }
 
     override fun onBindViewHolder(holder: WalletViewHolder, position: Int) {
-        val author = list[position]
-        holder.img.text =
-            holder.
+        val wallet = list[position]
+
+        holder.salary.text = wallet.salary
+        holder.money.text = wallet.money
+        holder.date.text = wallet.date
+
 
     }
 
@@ -28,7 +31,7 @@ class WalletsAdapter(var list: List<Wallet>) : RecyclerView.Adapter<WalletViewHo
 }
 
 class WalletViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    var img = itemView.findViewById<TextView>(R.id.img)
+
     var salary = itemView.findViewById<TextView>(R.id.salary)
     var money = itemView.findViewById<TextView>(R.id.money)
     var date = itemView.findViewById<TextView>(R.id.date)

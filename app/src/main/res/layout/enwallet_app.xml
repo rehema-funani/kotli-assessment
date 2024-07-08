@@ -3,20 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-             android:layout_height="match_parent">
+             android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="8dp"
+    android:elevation="8dp"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="159dp">
 
         <ImageView
             android:id="@+id/img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
-            android:layout_marginEnd="24dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.079"
+            android:layout_width="57dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/income_trx__6_" />
@@ -25,39 +28,32 @@
             android:id="@+id/salary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="204dp"
             android:layout_marginEnd="24dp"
             android:text="Salary"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.253"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.119"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toTopOf="@+id/img" />
 
         <TextView
             android:id="@+id/money"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="236dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
             android:text="kes40,000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.228"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/salary"
+            app:layout_constraintTop_toBottomOf="@+id/salary" />
 
         <TextView
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="200dp"
             android:layout_marginEnd="16dp"
             android:text="1 July 2024"
+            app:layout_constraintBottom_toBottomOf="@+id/money"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/salary"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/money" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
